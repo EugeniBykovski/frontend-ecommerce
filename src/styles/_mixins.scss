@@ -1,0 +1,19 @@
+@mixin flex() {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+}
+
+@mixin transition {
+  transition: all .3s;
+}
+
+@mixin alignment {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@mixin transform($a, $b) {
+  transform: translate($a, $b);
+}

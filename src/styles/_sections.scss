@@ -1,0 +1,58 @@
+.section {
+  padding: $p-3 0;
+  border-bottom: 2px solid $color-violet;
+
+  &__block {
+    @include flex();
+
+    &_image {
+      position: relative;
+
+      width: 50%;
+      height: 30rem;
+
+      background-color: $primary-color;
+      clip-path: polygon(3vh 18%, 100% 100vh, 100vh 100%, 100% 0);
+    }
+
+    &_title {
+      @include alignment();
+      @include transform(-25%, -45%);
+
+      font-size: $font-80;
+      font-weight: $font-w-700;
+
+      color: $color-violet;
+      text-align: center;
+    }
+
+    &_description {
+      @include transition();
+
+      width: 50%;
+      padding: $p-3;
+
+      text-align: center;
+
+      &:hover {
+        cursor: pointer;
+
+        transform: translateY(-5px);
+        box-shadow: 0 5px 10px rgba(77, 34, 104, 0.4);
+      }
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-1 {
+    margin-top: $m-1-5;
+  }
+
+  &-product {
+    margin-top: $m-6;
+  }
+}

@@ -1,0 +1,39 @@
+.navbar {
+  position: absolute;
+  margin-left: 8.5rem;
+  
+  &__lists {
+    @include flex();
+  }
+
+  &__list {
+
+    padding: $p-1-5;
+    list-style: none;
+  }
+
+  &__link {
+    padding: $p-0-5 0;
+
+    text-decoration: overline;
+    color: $color-white;
+    font-size: $font-12;
+
+    @include transition();
+
+    &:hover {
+      color: $color-violet;
+      border-bottom: 1px solid $color-violet;
+      text-decoration: none;
+    }
+  }
+}
+
+.back {
+  color: $color-violet;
+
+  &:hover {
+    color: $color-violet--darken;
+    border-bottom: 1px solid $color-violet--darken;
+  }
+}

@@ -1,0 +1,57 @@
+.btn {
+  @include transition();
+
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  margin: $m-1 $m-2;
+
+  text-decoration: none;
+  line-height: 45px;
+  border-radius: 45px;
+  text-align: center;
+  letter-spacing: 1px;
+
+  font-size: $font-12;
+  font-weight: $font-w-500;
+  
+  color: $color-white;
+  background: $color-white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+
+  &:hover {
+    background: $primary-color;
+    box-shadow: 0 5px 10px rgba(77, 34, 104, .4);
+    color: $color-white;
+
+    transform: translateY(-3px);
+  }
+
+  &__more {
+    background: $color-gray;
+  }
+
+  &__add {
+    background: $color-green;
+  }
+
+  &__view {
+    background: $color-violet--darken;
+  }
+
+  &__fixed {
+    position: fixed;
+    bottom: 2rem;
+    left: 0;
+
+    z-index: 10;
+
+    &_top {
+      position: fixed;
+      top: 2rem;
+      right: 0;
+  
+      z-index: 10;
+    }
+  }
+}

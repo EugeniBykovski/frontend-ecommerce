@@ -1,0 +1,38 @@
+.product {
+  @include flex();
+
+  &__item {
+    position: relative;
+  
+    width: calc(100% / 4);
+    margin: 1rem;
+    padding: $p-2;
+  
+    text-align: center;
+    background-color: $primary-color;
+    border-radius: 1rem;
+  
+    cursor: pointer;
+  }
+
+  &__image {
+    border-radius: 50%;
+    padding: $p-2;
+  }
+
+  &__title {
+    padding: $p-1;
+
+    font-size: $font-20;
+    font-weight: $font-w-500;
+
+    color: $color-white;
+  }
+
+  &__description {
+    padding: $p-1;
+
+    color: $color-violet;
+    line-height: 1.5;
+  }
+}
