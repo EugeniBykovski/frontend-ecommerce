@@ -137,7 +137,6 @@ body {
 .btn:hover {
   background: #4d2268;
   box-shadow: 0 5px 10px rgba(77, 34, 104, 0.4);
-  color: #ffffff;
   transform: translateY(-3px);
 }
 .btn__more {
@@ -283,9 +282,6 @@ body {
   width: 100%;
   height: auto;
 }
-.swiper-button-prev, .swiper-button-next {
-  color: #ce3192;
-}
 .swiper-scrollbar {
   bottom: 0;
 }
@@ -333,6 +329,7 @@ body {
   align-items: center;
 }
 .product__item {
+  transition: all 0.3s;
   position: relative;
   width: 25%;
   margin: 1rem;
@@ -342,8 +339,10 @@ body {
   border-radius: 1rem;
   cursor: pointer;
 }
+.product__item:hover {
+  transform: translateY(-3px);
+}
 .product__image {
-  border-radius: 50%;
   padding: 2rem;
 }
 .product__title {

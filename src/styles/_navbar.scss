@@ -7,19 +7,18 @@
   }
 
   &__list {
-
     padding: $p-1-5;
     list-style: none;
   }
 
   &__link {
+    @include transition();
+
     padding: $p-0-5 0;
 
     text-decoration: overline;
     color: $color-white;
     font-size: $font-12;
-
-    @include transition();
 
     &:hover {
       color: $color-violet;

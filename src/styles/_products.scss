@@ -2,10 +2,12 @@
   @include flex();
 
   &__item {
+    @include transition();
+
     position: relative;
   
     width: calc(100% / 4);
-    margin: 1rem;
+    margin: $m-1;
     padding: $p-2;
   
     text-align: center;
@@ -13,10 +15,13 @@
     border-radius: 1rem;
   
     cursor: pointer;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
   }
 
   &__image {
-    border-radius: 50%;
     padding: $p-2;
   }
 
